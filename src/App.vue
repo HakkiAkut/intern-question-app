@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <router-view />
+    <main-layout>
+      <router-view />
+    </main-layout>
   </div>
 </template>
-
-<style>
+<script>
+import MainLayout from "./layouts/MainLayout.vue";
+export default {
+  name: "App",
+  components: {
+    MainLayout,
+  },
+};
+</script>
+<style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import "./assets/scss/main.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: $background-gray-200;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 </style>
