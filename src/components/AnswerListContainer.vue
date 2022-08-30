@@ -82,13 +82,10 @@ export default {
       color: $blue;
     }
   }
-<<<<<<< Updated upstream
-=======
   & .tabs {
     margin-bottom: -1px;
     z-index: 1;
   }
->>>>>>> Stashed changes
   & .chosen {
     background-color: $main-background !important;
     color: $text-gray-600 !important;

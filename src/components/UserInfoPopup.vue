@@ -6,19 +6,6 @@
       <router-link to="#" class="username">{{ user.name }}</router-link>
       <p class="position">{{ user.position }}</p>
       <div class="contribution column">
-<<<<<<< Updated upstream
-        <router-link class="contribution-link" to="#"
-          >{{ user.contribution.questions }} Questions</router-link
-        >
-        <router-link class="contribution-link" to="#"
-          >{{ user.contribution.answers }} Answers</router-link
-        >
-        <router-link class="contribution-link" to="#"
-          >{{ user.contribution.bestAnswers }} Best Answers</router-link
-        >
-        <router-link class="contribution-link" to="#"
-          >{{ user.contribution.points }} Points</router-link
-=======
         <router-link class="contribution__link --type-questions" to="#">
           <p>{{ user.contribution.questions }} Questions</p></router-link
         >
@@ -31,7 +18,6 @@
         >
         <router-link class="contribution__link --type-points" to="#"
           ><p>{{ user.contribution.points }} Points</p></router-link
->>>>>>> Stashed changes
         >
       </div>
       <button-base
@@ -75,8 +61,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-<<<<<<< Updated upstream
-=======
 @mixin link-icon($url) {
   content: url($url);
   position: absolute;
@@ -85,7 +69,6 @@ export default {
   height: 13px;
   flex-shrink: 1;
 }
->>>>>>> Stashed changes
 .user-info {
   content: "";
   width: 260px;
@@ -118,15 +101,6 @@ export default {
   text-align: left;
   width: 200px;
   padding: 12px;
-<<<<<<< Updated upstream
-  & > .contribution-link {
-    @include font($roboto, $text-gray-400, 13px);
-    text-decoration: none;
-    margin: 6px 0;
-    &:hover {
-      color: $blue;
-    }
-=======
 
   & > #{&}__link {
     @include font($roboto, $text-gray-400, 13px);
@@ -149,7 +123,6 @@ export default {
     &.--type-points > p::before {
       @include link-icon("@/assets/icons/bucket.svg");
     }
->>>>>>> Stashed changes
   }
 }
 .avatar {
